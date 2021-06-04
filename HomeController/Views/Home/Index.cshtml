@@ -1,0 +1,20 @@
+﻿@using System.Globalization
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Nordthwind demo app</h1>
+    <p class="lead">Nordthwind harjoitus demo sovellus asp.net ympäristöllä.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+
+@for (int i = 0; i < 10; i++)
+            {
+                <p>@i</p>
+            }
+
+    <p>Nykyinen päiväys: @DateTime.Now</p>
+    <p>Nyt on @DateTime.Now.ToString(new CultureInfo("en-US"))</p>
+
+</div>
